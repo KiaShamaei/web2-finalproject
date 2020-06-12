@@ -1,0 +1,30 @@
+// section 4 ...
+
+.section4 {
+  color: $bg-color2;
+  background-color: $bg-color3;
+}
+.navbread {
+  background-color: $bg-color3;
+  a {
+    text-decoration: none;
+    color: $bg-color2;
+  }
+}
+
+
+.pics {
+  @include boxshadow;
+  transition: 0.6s;
+  transition: all 350ms ease;
+}
+.pics:hover {
+  @include zoom;
+  box-shadow: none;
+}
+.animation {
+  transform: scale(1);
+}
+.all {
+  display: block;
+}

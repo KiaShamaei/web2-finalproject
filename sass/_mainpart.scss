@@ -1,0 +1,48 @@
+//resset css 
+@font-face {
+  font-family: kiarash-shamaii;
+  src: url(../fonts/Yekan.ttf);
+}
+html, body, div, span, 
+ p,a
+ {
+	margin: 0;
+	padding: 0;
+  border: 0;
+  font-family: kiarsh-shamaii;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Yekan.ttf);
+}
+// reset end
+// main part...section1
+
+.navbarmain {
+    background-color: $navbarBg;
+  }
+/* change the color of active or hovered links */
+ .nav-item.active .nav-link,
+.nav-item:focus .nav-link,
+.nav-item:hover .nav-link {
+    @include setAStyle();
+}
+  
+  .mainpart {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/header-img.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/header-img.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  /*# sourceMappingURL=style.css.map */
+  // end main part...section1

@@ -1,0 +1,13 @@
+// section 2 ...
+
+.section2{
+    background:$bg-color;
+}
+.seprator{
+    @include sperator ;
+
+}
+.hidelement{
+    opacity: 0;
+}
+// end of section 2

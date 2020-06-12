@@ -1,0 +1,24 @@
+// section 6 ...
+
+.bg-card-pro {
+  background: url(../images/pricing-card-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: 45% 0%;
+  background-size: cover;
+}
+.transparent-bg {
+  @include transparent-bg;
+}
+.seprator1 {
+  @include seprator(1px);
+}
+.services {
+  @include boxshadow(2px, 5px, 20px, #888888);
+  transition: 0.5s;
+  transition: all 350ms ease;
+  height: 85vh;
+}
+.services:hover {
+  @include zoom(1.1);
+  box-shadow: none;
+}

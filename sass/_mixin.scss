@@ -1,0 +1,22 @@
+// mixin part ..........
+
+@mixin sperator($size: 4px) {
+  border-top: $size solid $seprator-color;
+}
+@mixin boxshadow($f1: 0px, $f2: 5px, $f3: 35px, $f4: #8888) {
+  box-shadow: $f1 $f2 $f3 $f4;
+}
+@mixin zoom($zoom: 1.03) {
+  transform: scale($zoom);
+}
+@mixin transparent-bg() {
+  background: transparent;
+}
+@mixin seprator($size: 4px) {
+  border-top: $size solid #c5c6c8;
+}
+@mixin setAStyle(){
+  text-decoration: none;
+  color:$navbarColor  !important;
+
+}
