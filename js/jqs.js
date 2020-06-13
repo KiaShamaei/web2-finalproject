@@ -1,5 +1,5 @@
 /** @format */
-
+// fade of camera down --
 $(window).on("load", function () {
   $(window)
     .scroll(function () {
@@ -35,6 +35,7 @@ $(window).on("load", function () {
 //     }
 //   });
 // });
+// gallery filter down --
 $(document).ready(function () {
   $(".all-filter").click(function () {
     $(".all").show("slow");
@@ -63,4 +64,36 @@ $(document).ready(function () {
     $(".all").show("slow");
     $(".free").fadeOut("slow");
   });
+});
+// services scroll item scripts --
+
+$(window).on("load", function () {
+  $(window)
+    .scroll(function () {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $("#scroll-to").each(function () {
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        if (objectBottom < windowBottom) {
+
+          $(".animate-right").animate({
+            right: '100px'
+          }, "slow");
+          $(".animate-left").animate({
+            left: '100px'
+          }, "slow");
+
+        }
+
+      });
+
+    })
+    .scroll(function () {
+      $("animate-right").animate({
+        right: '10px'
+      });
+      $("animate-left").animate({
+        left: '10px'
+      });
+
+    });
 });

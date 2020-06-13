@@ -6,19 +6,45 @@
   background-position: 45% 0%;
   background-size: cover;
 }
+
 .transparent-bg {
   @include transparent-bg;
 }
+
 .seprator1 {
   @include seprator(1px);
 }
+
 .services {
   @include boxshadow(2px, 5px, 20px, #888888);
   transition: 0.5s;
   transition: all 350ms ease;
   height: 85vh;
 }
+
 .services:hover {
   @include zoom(1.1);
   box-shadow: none;
+}
+
+.services {
+  min-height: 70vh;
+}
+
+.animate-left {
+  position: absolute;
+  left: 10px;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
+}
+
+.animate-right {
+  position: absolute;
+  right: 10px;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
 }

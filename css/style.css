@@ -175,6 +175,32 @@ ol, ul {
           box-shadow: none;
 }
 
+.services {
+  min-height: 70vh;
+}
+
+.animate-left {
+  position: absolute;
+  left: 10px;
+}
+
+@media (max-width: 768px) {
+  .animate-left {
+    position: static;
+  }
+}
+
+.animate-right {
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .animate-right {
+    position: static;
+  }
+}
+
 /** @format */
 .bg-contact {
   background: url("../images/form-img.jpeg") no-repeat;
