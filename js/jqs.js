@@ -70,30 +70,24 @@ $(document).ready(function () {
 $(window).on("load", function () {
   $(window)
     .scroll(function () {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $("#scroll-to").each(function () {
-        var objectBottom = $(this).offset().top + $(this).outerHeight();
-        if (objectBottom < windowBottom) {
+		var hT = $('#scroll-to').offset().top,
+		hH = $('#scroll-to').outerHeight(),
+		wH = $(window).height(),
+		wS = $(this).scrollTop();
+	if (wS > (hT+hH-wH)){
+		 $(".animate-right").css("right", "80px");
+		//  $(".animate-right").animate({right: '80px'})
+		 $(".animate-left").css("left", "80px");
+		 //$(".animate-left").animate({left: '80px'})
 
-          $(".animate-right").animate({
-            right: '100px'
-          }, "slow");
-          $(".animate-left").animate({
-            left: '100px'
-          }, "slow");
-
-        }
-
-      });
+	}else {
+		$(".animate-right").css("right", "10px");
+		// $(".animate-right").animate({right: '10px'})
+		 $(".animate-left").css("left", "10px");
+		// $(".animate-left").animate({left: '10px'})
+	}
+     
 
     })
-    .scroll(function () {
-      $("animate-right").animate({
-        right: '10px'
-      });
-      $("animate-left").animate({
-        left: '10px'
-      });
-
-    });
+  
 });

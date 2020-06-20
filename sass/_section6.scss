@@ -30,10 +30,12 @@
 .services {
   min-height: 70vh;
 }
-
+.animate-container {
+	position: relative;
+}
 .animate-left {
   position: absolute;
-  left: 10px;
+  
 
   @media (max-width: 768px) {
     position: static;
@@ -42,7 +44,7 @@
 
 .animate-right {
   position: absolute;
-  right: 10px;
+ 
 
   @media (max-width: 768px) {
     position: static;
